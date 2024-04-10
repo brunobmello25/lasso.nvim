@@ -5,6 +5,8 @@ local config = {}
 
 
 function M.setup(config_)
+    config_ = config_ or {}
+
     config.marks_tracker_path = config_.marks_tracker_path or '.lasso-marks-tracker'
 end
 
